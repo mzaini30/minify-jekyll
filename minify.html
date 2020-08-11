@@ -1,0 +1,5 @@
+--- 
+layout: compress
+--- 
+
+{{ content | replace: '<script type="text/javascript">', "<script>" | replace: "<script type='text/javascript'>", "<script>" | replace: "<script>", "<script>// <pre>" | replace: "</script>", "// </pre></script>" }}
